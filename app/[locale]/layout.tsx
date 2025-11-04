@@ -36,7 +36,7 @@ export function generateMetadata({
     ? '财富管理,投资顾问,理财规划,张慧薇,Elise Chong,Her Wealth,她的财富,女性理财,财务规划,投资咨询'
     : 'wealth management,investment advisor,financial planning,Elise Chong,Her Wealth,women finance,financial advisor,investment consultant'
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://your-domain.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://herwealth.vercel.app'
   
   return {
     metadataBase: new URL(baseUrl),

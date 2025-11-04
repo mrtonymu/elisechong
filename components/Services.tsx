@@ -48,7 +48,7 @@ export default function Services() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary-900 text-center mb-3 sm:mb-4">
-            {t('title')}<span className="text-sage-700">{t('titleHighlight')}</span>{t('title2')}
+            {t('title')} <span className="text-sage-700">{t('titleHighlight')}</span>{t('title2') && <> {t('title2')}</>}
           </h2>
           <div className="relative bg-gradient-to-r from-sage-100/50 via-sage-50/30 to-sage-100/50 rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 mb-8 sm:mb-10 md:mb-12 lg:mb-16 max-w-3xl mx-auto border border-sage-200">
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-primary-700 text-center font-medium leading-relaxed">
