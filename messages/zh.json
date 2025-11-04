@@ -86,6 +86,13 @@
     "wealthDefinition1b": "它代表的是自由——选择自己生活方式的自由，以勇气活出自我的力量，以及掌握未来方向的智慧。",
     "wealthDefinition2": "在 Her Wealth，我们相信：理财不只是累积金钱，而是建立自信、获得清晰、并实现独立与丰盛人生的一段旅程。",
     "testimonials": "客户见证",
+    "testimonialsSubtitle": "实际投资成果",
+    "testimonialsDescription": "我相信最好的见证，是结果。以下是我为客户打造的真实投资组合表现，数据已隐去隐私，仅展示投资成果方向。",
+    "portfolioDate": "截至 {date}",
+    "portfolioItem": "投资项目",
+    "portfolioCapital": "投资资本",
+    "portfolioReturn": "当前回报率",
+    "portfolioReturnRate": "+{rate}%",
     "testimonial1": "Elise 非常专业，耐心解答我的每一个问题，让我对理财有了全新的认识。",
     "testimonial1Author": "王女士",
     "testimonial2": "感谢 Elise 帮我规划了完整的家庭财富方案，让我对未来的规划更有信心。",
@@ -150,7 +157,8 @@
   "images": {
     "heroAlt": "张慧薇 Elise Chong - 财富管理与投资顾问",
     "aboutAlt": "张慧薇 Elise Chong - 个人故事",
-    "trendingReelsAlt": "Elise Highlights"
+    "trendingReelsAlt": "Elise Highlights",
+    "testimonialAlt": "客户见证 - 专业服务展示"
   }
 }
 

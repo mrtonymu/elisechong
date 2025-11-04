@@ -86,6 +86,13 @@
     "wealthDefinition1b": "It's about freedom — the freedom to choose your path, the courage to live with purpose, and the power to shape a future that truly belongs to you.",
     "wealthDefinition2": "At Her Wealth, we believe financial growth should be empowering, inspiring, and deeply personal — a journey we walk together toward confidence, clarity, and independence.",
     "testimonials": "What Clients Say",
+    "testimonialsSubtitle": "Real Portfolio Results",
+    "testimonialsDescription": "I believe the best testimonial is results. Below are the real investment portfolio performances I've created for clients. Data has been anonymized to protect privacy, showing only investment outcomes.",
+    "portfolioDate": "As of {date}",
+    "portfolioItem": "Investment",
+    "portfolioCapital": "Capital Invested",
+    "portfolioReturn": "Current Return",
+    "portfolioReturnRate": "+{rate}%",
     "testimonial1": "Elise is wonderful. She took the time to really listen and answered every question I had. She completely changed how I think about wealth management and financial planning.",
     "testimonial1Author": "Ms. Wang",
     "testimonial2": "I'm so grateful to Elise for helping me create a comprehensive wealth plan for my family. I finally feel confident about our future.",
@@ -150,7 +157,8 @@
   "images": {
     "heroAlt": "Elise Chong - Wealth Management & Investment Advisor",
     "aboutAlt": "Elise Chong - Personal Story",
-    "trendingReelsAlt": "Elise Highlights"
+    "trendingReelsAlt": "Elise Highlights",
+    "testimonialAlt": "Client Testimonial - Professional Service Showcase"
   }
 }
 
