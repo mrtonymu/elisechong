@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "name": "张慧薇",
+    "nameEn": "Elise",
+    "menu": "Menu",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "language": {
+    "zh": "中文",
+    "en": "English",
+    "switchLanguage": "Switch language"
+  },
+  "hero": {
+    "title": "I'm",
+    "name": "Elise Chong",
+    "subtitle": "",
+    "role": "Wealth Management & Investment Advisor",
+    "slogan": "Wealth isn't just about numbers —",
+    "slogan2": "it's about how money supports the life you truly want to live.",
+    "values": "Professional | Warm | Trustworthy",
+    "cta": "Book a Consultation",
+    "learnMore": "Learn More",
+    "brand": "HW",
+    "brandName": "HER WEALTH",
+    "brandNameEn": "",
+    "founderOf": "Founder of"
+  },
+  "trendingReels": {
+    "title": "Elise Highlights",
+    "subtitle": "Discover what makes a difference",
+    "prevButton": "Previous",
+    "nextButton": "Next",
+    "goToSlide": "Go to slide",
+    "item1": {
+      "title": "Professional Excellence",
+      "description": "Years of dedicated expertise in the field"
+    },
+    "item2": {
+      "title": "Personalized Care",
+      "description": "Every client's journey matters to me"
+    },
+    "item3": {
+      "title": "Trusted Credentials",
+      "description": "Fully licensed and continuously learning"
+    }
+  },
+  "about": {
+    "title": "Her Wealth",
+    "divider": "Wisdom | Professionalism | Heart",
+    "intro": "A modern wealth platform empowering women",
+    "intro2": "to grow, protect, and own their financial freedom.",
+    "storyTitle": "My Story",
+    "storyTitleEn": "我的故事",
+    "story1": "I'm Elise Chong. During the MCO period, I stepped into the world of finance and wealth management. That moment, I realized that wealth is not just about cold, hard numbers — it's about the wisdom deeply connected to our everyday lives.",
+    "story2": "I've seen how many people worry about money and feel uncertain about the future. That's why I've made it my mission to use my experience and expertise to guide others toward a more stable, confident, and fulfilling financial journey.",
+    "story3": "This belief inspired me to create my own brand — HW — Her Wealth. It's a financial growth platform designed for women, empowering them to take control of their finances, and create a life of true independence, abundance, and freedom.",
+    "wealthDefinition": "Wealth is more than numbers.",
+    "wealthDefinition1b": "It's about freedom — the freedom to choose your path, the courage to live with purpose, and the power to shape a future that truly belongs to you.",
+    "wealthDefinition2": "At Her Wealth, we believe financial growth should be empowering, inspiring, and deeply personal — a journey we walk together toward confidence, clarity, and independence.",
+    "cert1": "Professional Certification",
+    "cert1Desc": "Certified Financial Planner",
+    "cert2": "Proven Experience",
+    "cert2Desc": "Years of hands-on expertise",
+    "cert3": "Always Learning",
+    "cert3Desc": "Staying current with industry best practices"
+  },
+  "trust": {
+    "title": "Why You Can",
+    "titleHighlight": "Trust",
+    "title2": "Me",
+    "qualifications": "Professional Highlights",
+    "qualificationsIntro": "",
+    "cert1": "Certified Financial Planner",
+    "cert1Desc": "",
+    "cert2": "Proven Experience",
+    "cert2Desc": "years of hands-on financial planning expertise",
+    "cert3": "Always Evolving",
+    "cert3Desc": "continuously learning and adapting to deliver what's best for you",
+    "philosophy": "My Service Philosophy",
+    "philosophyText1": "I believe every meaningful financial plan begins with understanding you — your goals, your values, and what truly matters in your life.",
+    "philosophyText2": "It's never about selling products. It's about crafting a personalized wealth strategy that grows with you.",
+    "philosophyText3": "Transparent. Professional. Genuine. No matter where you are on your journey, I'll always be on your side — that's my promise to you.",
+    "wealthDefinition": "Wealth is more than numbers.",
+    "wealthDefinition1b": "It's about freedom — the freedom to choose your path, the courage to live with purpose, and the power to shape a future that truly belongs to you.",
+    "wealthDefinition2": "At Her Wealth, we believe financial growth should be empowering, inspiring, and deeply personal — a journey we walk together toward confidence, clarity, and independence.",
+    "testimonials": "What Clients Say",
+    "testimonial1": "Elise is wonderful. She took the time to really listen and answered every question I had. She completely changed how I think about wealth management and financial planning.",
+    "testimonial1Author": "Ms. Wang",
+    "testimonial2": "I'm so grateful to Elise for helping me create a comprehensive wealth plan for my family. I finally feel confident about our future.",
+    "testimonial2Author": "Mr. Li",
+    "testimonial3": "Elise is professional, detail-oriented, and truly reliable. She doesn't just give you a plan and disappear—she's there for ongoing support.",
+    "testimonial3Author": "Ms. Chen"
+  },
+  "services": {
+    "title": "How I Can",
+    "titleHighlight": "Help",
+    "title2": "",
+    "subtitle": "I don't just talk about finance — I help you find clarity and calm around money, so your wealth aligns with your values and supports the life you want to live.",
+    "subtitleHighlight": "",
+    "service1": {
+      "title": "Family",
+      "titleHighlight": "Wealth",
+      "title2": "Planning",
+      "description": "From cashflow and protection to education and legacy, I help families design a stable, balanced financial foundation.",
+      "scenario": "For young couples or parents who want peace of mind and a clear plan."
+    },
+    "service2": {
+      "title": "Investment",
+      "titleHighlight": "&",
+      "title2": "Growth",
+      "description": "With long-term vision and structured strategy, I guide you toward steady, confident financial growth.",
+      "scenario": "For professionals and entrepreneurs who value sustainable progress."
+    },
+    "service3": {
+      "title": "Retirement",
+      "titleHighlight": "&",
+      "title2": "Lifestyle",
+      "description": "Plan today for the life you want tomorrow — because retirement should feel free, not fearful.",
+      "scenario": "For those preparing for the next chapter with purpose and confidence."
+    },
+    "footer": "Wealth isn't about numbers — it's about freedom, balance, and peace of mind.",
+    "footer2": "",
+    "cta": "Book a Consultation"
+  },
+  "contact": {
+    "title": "Start Your",
+    "titleHighlight": "Financial Journey",
+    "subtitle": "Tell me a little about your goals — I'll personally get back to you within a day.",
+    "namePlaceholder": "Your Name",
+    "phoneInputPlaceholder": "Phone (optional)",
+    "serviceTypePlaceholder": "Service Type",
+    "serviceTypeOption1": "Family",
+    "serviceTypeOption2": "Investment",
+    "serviceTypeOption3": "Retirement",
+    "messagePlaceholder": "Tell me more about what you'd like to discuss…",
+    "footerNote": "I usually reply within a day — feel free to reach out on WhatsApp if you'd prefer a quicker chat.",
+    "submit": "Submit Form",
+    "submitting": "Submitting...",
+    "whatsappButton": "Contact via WhatsApp 💬",
+    "whatsappMessageDefault": "Hi Elise, I'd like to learn more about your wealth management services",
+    "success": "Thank you for reaching out! I'll get back to you as soon as possible.",
+    "error": "Submission failed. Please try again or contact me via WhatsApp."
+  },
+  "footer": {
+    "copyright": "© {year} Her Wealth · Elise Chong 张慧薇",
+    "tagline": "Crafted with care to empower your financial journey."
+  },
+  "images": {
+    "heroAlt": "Elise Chong - Wealth Management & Investment Advisor",
+    "aboutAlt": "Elise Chong - Personal Story",
+    "trendingReelsAlt": "Elise Highlights"
+  }
+}
+

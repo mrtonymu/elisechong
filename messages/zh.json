@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "name": "张慧薇",
+    "nameEn": "Elise",
+    "menu": "菜单",
+    "about": "关于我",
+    "services": "专业服务",
+    "contact": "联系方式"
+  },
+  "language": {
+    "zh": "中文",
+    "en": "English",
+    "switchLanguage": "切换语言"
+  },
+  "hero": {
+    "title": "我是",
+    "name": "张慧薇",
+    "subtitle": "",
+    "role": "Wealth Management & Investment",
+    "slogan": "理财不是冷冰冰的数字，",
+    "slogan2": "而是与生活紧密相连的智慧",
+    "values": "专业 | 温暖 | 值得信赖",
+    "cta": "预约咨询",
+    "learnMore": "了解更多",
+    "brand": "HW",
+    "brandName": "她的财富",
+    "brandNameEn": "",
+    "founderOf": "Founder Of"
+  },
+  "trendingReels": {
+    "title": "Elise Highlights",
+    "subtitle": "点击查看",
+    "prevButton": "上一张",
+    "nextButton": "下一张",
+    "goToSlide": "跳转到第",
+    "item1": {
+      "title": "专业成就",
+      "description": "深耕行业多年，经验丰富"
+    },
+    "item2": {
+      "title": "客户服务",
+      "description": "用心服务，专业贴心"
+    },
+    "item3": {
+      "title": "行业认证",
+      "description": "持证上岗，资质齐全"
+    }
+  },
+  "about": {
+    "title": "Her Wealth",
+    "divider": "智慧 | 专业 | 温暖",
+    "intro": "一个专为女性打造的财富成长平台，",
+    "intro2": "以智慧、专业与温度，陪伴你掌握财务自由的力量。",
+    "storyTitle": "我的故事",
+    "storyTitleEn": "My Story",
+    "story1": "我是张慧薇。在 MCO 期间，我踏入了金融与财富管理的世界。那一刻，我深深体会到——理财并不是冷冰冰的数字，而是一种与生活紧密相连的智慧。",
+    "story2": "我看见许多人因为金钱焦虑、为未来担忧。因此，我希望能透过自己的专业与经验，陪伴更多人走上一条安心、稳健且有方向的财富之路。",
+    "story3": "这份信念，促使我创立了个人品牌 HW — Her Wealth 她的财富。这是一个专为女性打造的财富成长平台，帮助每位女性重新掌握金钱的主动权，打造属于自己的独立与丰盛人生。",
+    "wealthDefinition": "财富，从来不只是数字。",
+    "wealthDefinition1b": "它代表的是自由——选择自己生活方式的自由，以勇气活出自我的力量，以及掌握未来方向的智慧。",
+    "wealthDefinition2": "在 Her Wealth，我们相信：理财不只是累积金钱，而是建立自信、获得清晰、并实现独立与丰盛人生的一段旅程。",
+    "cert1": "专业认证",
+    "cert1Desc": "金融理财师认证",
+    "cert2": "行业经验",
+    "cert2Desc": "多年实战经验",
+    "cert3": "持续学习",
+    "cert3Desc": "不断精进专业"
+  },
+  "trust": {
+    "title": "为什么值得",
+    "titleHighlight": "信任",
+    "title2": "",
+    "qualifications": "专业资历",
+    "qualificationsIntro": "",
+    "cert1": "注册理财规划师",
+    "cert1Desc": "",
+    "cert2": "丰富实战经验",
+    "cert2Desc": "多年一线理财与投资规划经验",
+    "cert3": "持续成长学习",
+    "cert3Desc": "与时俱进，持续优化客户方案",
+    "philosophy": "我的服务理念",
+    "philosophyText1": "我相信，每一份真正有意义的理财规划，都应从\"了解你\"开始——了解你的目标、价值观，以及对你而言最重要的事。",
+    "philosophyText2": "这不是在推销产品，而是在为你量身打造一个能陪伴你成长的财富策略。我始终坚持：透明、专业、与真诚。",
+    "philosophyText3": "无论在哪个阶段，我都会站在你这一边——这是我对你的承诺。",
+    "wealthDefinition": "财富，从来不只是数字。",
+    "wealthDefinition1b": "它代表的是自由——选择自己生活方式的自由，以勇气活出自我的力量，以及掌握未来方向的智慧。",
+    "wealthDefinition2": "在 Her Wealth，我们相信：理财不只是累积金钱，而是建立自信、获得清晰、并实现独立与丰盛人生的一段旅程。",
+    "testimonials": "客户见证",
+    "testimonial1": "Elise 非常专业，耐心解答我的每一个问题，让我对理财有了全新的认识。",
+    "testimonial1Author": "王女士",
+    "testimonial2": "感谢 Elise 帮我规划了完整的家庭财富方案，让我对未来的规划更有信心。",
+    "testimonial2Author": "李先生",
+    "testimonial3": "专业、细致、值得信赖。Elise 不仅提供方案，更会跟进后续服务。",
+    "testimonial3Author": "陈女士"
+  },
+  "services": {
+    "title": "我能帮你",
+    "titleHighlight": "解决",
+    "title2": "什么",
+    "subtitle": "我不只是帮你做理财，而是帮你梳理生活中的金钱关系，让财富变得有方向、有温度，也更贴近你的价值观。",
+    "subtitleHighlight": "",
+    "service1": {
+      "title": "家庭",
+      "titleHighlight": "财富",
+      "title2": "规划",
+      "description": "从收入分配、风险保障到教育与传承，帮你打造一个能陪伴家人成长、稳健发展的财务体系。",
+      "scenario": "为年轻家庭、育儿阶段或想理清家庭财务的你，找到安心与平衡的财富路径。"
+    },
+    "service2": {
+      "title": "资产",
+      "titleHighlight": "增长",
+      "title2": "规划",
+      "description": "以长远眼光和清晰策略，让资金在稳健中持续增值。",
+      "scenario": "为专业人士与创业者提供结构化的投资框架，让财富增长不再盲目，而是有节奏地前进。"
+    },
+    "service3": {
+      "title": "退休与",
+      "titleHighlight": "生活",
+      "title2": "规划",
+      "description": "提早规划退休收入，让未来的每一天都拥有选择的自由。",
+      "scenario": "为想更早掌控未来的你，设计一个能兼顾生活品质与安心感的退休蓝图。"
+    },
+    "footer": "财富不只是数字，它关乎选择的自由、生活的底气，以及心中的平静。",
+    "footer2": "",
+    "cta": "立即预约咨询"
+  },
+  "contact": {
+    "title": "开始你的",
+    "titleHighlight": "财富规划",
+    "subtitle": "请简单告诉我你的想法，我会在 24 小时内亲自回复。",
+    "namePlaceholder": "您的姓名",
+    "phoneInputPlaceholder": "您的电话（选填）",
+    "serviceTypePlaceholder": "您希望了解的服务",
+    "serviceTypeOption1": "家庭规划",
+    "serviceTypeOption2": "资产增长",
+    "serviceTypeOption3": "退休规划",
+    "messagePlaceholder": "您的需求或想法",
+    "footerNote": "我会在一天内亲自回复，如果您希望更快联系，也可以直接通过 WhatsApp 与我聊聊。",
+    "submit": "提交表单",
+    "submitting": "提交中...",
+    "whatsappButton": "WhatsApp 联系 💬",
+    "whatsappMessageDefault": "你好 Elise，我想了解更多关于理财规划的服务",
+    "success": "感谢您的咨询！我会尽快与您联系。",
+    "error": "提交失败，请稍后重试或通过 WhatsApp 联系我。"
+  },
+  "footer": {
+    "copyright": "© {year} Her Wealth · Elise Chong 张慧薇",
+    "tagline": "用心打造，助您成就财务自由之路。"
+  },
+  "images": {
+    "heroAlt": "张慧薇 Elise Chong - 财富管理与投资顾问",
+    "aboutAlt": "张慧薇 Elise Chong - 个人故事",
+    "trendingReelsAlt": "Elise Highlights"
+  }
+}
+
