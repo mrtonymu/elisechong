@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { locales } from '@/i18n/request'
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react'
 
 // 静态导入所有消息文件，完全避免动态导入
 import zhMessages from '@/messages/zh.json'
@@ -122,6 +123,7 @@ export default function LocaleLayout({
         <NextIntlClientProvider messages={messages} locale={locale}>
           {children}
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   )
