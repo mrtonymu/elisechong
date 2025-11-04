@@ -90,6 +90,7 @@
     "testimonialsDescription": "我相信最好的见证，是结果。以下是我为客户打造的真实投资组合表现，数据已隐去隐私，仅展示投资成果方向。",
     "portfolioDate": "截至 {date}",
     "portfolioItem": "投资项目",
+    "portfolioItemName": "精选成长型投资组合",
     "portfolioCapital": "投资资本",
     "portfolioReturn": "当前回报率",
     "portfolioReturnRate": "+{rate}%",

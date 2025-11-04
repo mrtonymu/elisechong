@@ -139,7 +139,7 @@ export default function Trust() {
                       <span className="text-xl sm:text-2xl">📈</span>
                       <p className="text-xs sm:text-sm text-primary-600 font-medium">{t('portfolioItem')}</p>
                     </div>
-                    <p className="text-sm sm:text-base md:text-lg font-semibold text-primary-900 break-words">Kenanga Growth Fund</p>
+                    <p className="text-sm sm:text-base md:text-lg font-semibold text-primary-900 break-words">{t('portfolioItemName')}</p>
                   </div>
 
                   {/* 投资资本 */}
