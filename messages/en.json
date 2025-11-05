@@ -5,6 +5,7 @@
     "menu": "Menu",
     "about": "About",
     "services": "Services",
+    "willTrust": "Will & Trust",
     "contact": "Contact"
   },
   "language": {
@@ -131,6 +132,29 @@
     "footer": "Wealth isn't about numbers — it's about freedom, balance, and peace of mind.",
     "footer2": "",
     "cta": "Book a Consultation"
+  },
+  "willTrust": {
+    "title": "Will & Trust Planning",
+    "titleHighlight": "",
+    "title2": "",
+    "subtitle": "Prepare for tomorrow — so your wealth and love can be passed on with peace of mind.",
+    "willIcon": "🌿",
+    "willTitle": "Will Planning",
+    "willDescription": "Ensure your assets are distributed according to your wishes — protecting the people who matter most.",
+    "willPoint1": "Clearly outline your intentions to avoid family disputes",
+    "willPoint2": "Appoint trusted guardians for your children",
+    "willPoint3": "Provide clarity and comfort to your loved ones",
+    "trustTitle": "Trust Planning",
+    "trustDescription": "A flexible, thoughtful way to safeguard and pass on your legacy — with care and intention.",
+    "trustPoint1": "Tax-efficient and privacy-conscious wealth transfer",
+    "trustPoint2": "Protect assets and avoid unnecessary legal exposure",
+    "trustPoint3": "Tailor your trust to fit every stage of life",
+    "whyPlanTitle": "Why plan early?",
+    "whyPlanPoint1": "Time & Preparation — Proper planning takes time and professional guidance.",
+    "whyPlanPoint2": "Legal Complexity — A clear plan helps prevent disputes and protect your family's rights.",
+    "whyPlanPoint3": "Family Harmony — Transparency brings understanding, even during difficult times.",
+    "footer": "Estate planning isn't just paperwork — it's a promise of love, care, and security for those you cherish most.",
+    "cta": "Consult on Estate Planning"
   },
   "contact": {
     "title": "Start Your",

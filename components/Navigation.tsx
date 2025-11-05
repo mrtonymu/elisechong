@@ -22,6 +22,7 @@ export default function Navigation() {
   const navItems = [
     { name: t('about'), href: '#about' },
     { name: t('services'), href: '#services' },
+    { name: t('willTrust'), href: '#will-trust' },
     { name: t('contact'), href: '#contact' },
   ]
 

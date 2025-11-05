@@ -5,6 +5,7 @@
     "menu": "菜单",
     "about": "关于我",
     "services": "专业服务",
+    "willTrust": "遗嘱与信托",
     "contact": "联系方式"
   },
   "language": {
@@ -131,6 +132,29 @@
     "footer": "财富不只是数字，它关乎选择的自由、生活的底气，以及心中的平静。",
     "footer2": "",
     "cta": "立即预约咨询"
+  },
+  "willTrust": {
+    "title": "遗嘱与信托规划",
+    "titleHighlight": "",
+    "title2": "",
+    "subtitle": "为未来做准备，让爱与财富都能被妥善守护。",
+    "willIcon": "💫",
+    "willTitle": "遗嘱规划",
+    "willDescription": "让你的资产依照心意分配，避免争议与误会，守护你最在乎的人。",
+    "willPoint1": "明确资产去向，减少家庭纷争与误解",
+    "willPoint2": "保障未成年子女，指定信任的监护人",
+    "willPoint3": "让你的意愿清晰传承，不留遗憾",
+    "trustTitle": "信托规划",
+    "trustDescription": "让财富的传承更有温度与智慧，兼顾保护、节税与隐私。",
+    "trustPoint1": "税务优化与资产保全，最大化传承价值",
+    "trustPoint2": "隐私管理，避免公开遗产细节",
+    "trustPoint3": "按人生阶段灵活分配，守护家人每一步",
+    "whyPlanTitle": "为什么需要及早规划？",
+    "whyPlanPoint1": "时间成本：规划需要时间与专业建议，提前准备才能从容应对",
+    "whyPlanPoint2": "法律复杂性：专业的规划能避免未来争议，保障家人权益",
+    "whyPlanPoint3": "家庭和谐：清晰透明的安排能减少误解，让家人在困难时刻更团结",
+    "footer": "遗产规划不只是法律文件，更是一份「对未来的承诺」——让你爱的人，在任何时候都能被安心照顾。",
+    "cta": "咨询遗产规划"
   },
   "contact": {
     "title": "开始你的",
