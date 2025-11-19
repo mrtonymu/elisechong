@@ -3,101 +3,147 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
 import { useTranslations, useLocale } from 'next-intl'
-
-// WhatsApp 配置
-// 电话号码格式：国家代码+号码（不带+号和空格）
-const WHATSAPP_PHONE = '60165281564' // 马来西亚：60 + 165281564
-const WHATSAPP_SHORT_LINK = 'https://wa.link/2x0scs' // 备用短链接
+import { openWhatsApp } from '@/utils/whatsapp'
 
 export default function Contact() {
   const t = useTranslations('contact')
+  const tRecruitment = useTranslations('recruitment')
   const locale = useLocale()
+  const [purpose, setPurpose] = useState<'consultation' | 'recruitment'>('consultation')
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
+    email: '',
     serviceType: '',
+    position: '',
     message: '',
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [errors, setErrors] = useState<{ name?: string; message?: string }>({})
+  const [errors, setErrors] = useState<{ name?: string; email?: string; message?: string; position?: string }>({})
   const [showSuccess, setShowSuccess] = useState(false)
 
   const formatWhatsAppMessage = () => {
     const isZh = locale === 'zh'
-    
     const parts = []
     
-    if (isZh) {
-      // 中文格式
-      parts.push('你好 Elise，我想了解更多关于理财规划的服务。\n')
-      parts.push('\n')
-      
-      if (formData.name) {
-        parts.push(`姓名：${formData.name}\n`)
+    if (purpose === 'consultation') {
+      // 客户咨询格式
+      if (isZh) {
+        parts.push('你好 Elise，我想了解更多关于理财规划的服务。\n')
+        parts.push('\n')
+        
+        if (formData.name) {
+          parts.push(`姓名：${formData.name}\n`)
+        }
+        if (formData.phone) {
+          parts.push(`电话：${formData.phone}\n`)
+        }
+        if (formData.serviceType) {
+          parts.push(`服务类型：${formData.serviceType}\n`)
+        }
+        
+        if (formData.message) {
+          parts.push('\n需求描述：\n')
+          parts.push(`${formData.message}\n`)
+        }
+        
+        parts.push('\n期待您的回复！')
+      } else {
+        parts.push("Hi Elise, I'm interested in your wealth management services.\n")
+        parts.push('\n')
+        
+        if (formData.name) {
+          parts.push(`Name: ${formData.name}\n`)
+        }
+        if (formData.phone) {
+          parts.push(`Phone: ${formData.phone}\n`)
+        }
+        if (formData.serviceType) {
+          parts.push(`Service Type: ${formData.serviceType}\n`)
+        }
+        
+        if (formData.message) {
+          parts.push('\nMessage:\n')
+          parts.push(`${formData.message}\n`)
+        }
+        
+        parts.push('\nPlease get back to me soon!')
       }
-      if (formData.phone) {
-        parts.push(`电话：${formData.phone}\n`)
-      }
-      if (formData.serviceType) {
-        parts.push(`服务类型：${formData.serviceType}\n`)
-      }
-      
-      if (formData.message) {
-        parts.push('\n需求描述：\n')
-        parts.push(`${formData.message}\n`)
-      }
-      
-      parts.push('\n期待您的回复！')
     } else {
-      // English format
-      parts.push("Hi Elise, I'm interested in your wealth management services.\n")
-      parts.push('\n')
-      
-      if (formData.name) {
-        parts.push(`Name: ${formData.name}\n`)
+      // 加入我们格式
+      if (isZh) {
+        parts.push('你好 Elise，我对 Her Wealth 的招募机会很感兴趣。\n')
+        parts.push('\n')
+        
+        if (formData.name) {
+          parts.push(`姓名：${formData.name}\n`)
+        }
+        if (formData.email) {
+          parts.push(`邮箱：${formData.email}\n`)
+        }
+        if (formData.phone) {
+          parts.push(`电话：${formData.phone}\n`)
+        }
+        if (formData.position) {
+          parts.push(`申请职位：${formData.position}\n`)
+        }
+        
+        if (formData.message) {
+          parts.push('\n自我介绍：\n')
+          parts.push(`${formData.message}\n`)
+        }
+        
+        parts.push('\n期待您的回复！')
+      } else {
+        parts.push("Hi Elise, I'm interested in joining Her Wealth.\n")
+        parts.push('\n')
+        
+        if (formData.name) {
+          parts.push(`Name: ${formData.name}\n`)
+        }
+        if (formData.email) {
+          parts.push(`Email: ${formData.email}\n`)
+        }
+        if (formData.phone) {
+          parts.push(`Phone: ${formData.phone}\n`)
+        }
+        if (formData.position) {
+          parts.push(`Position: ${formData.position}\n`)
+        }
+        
+        if (formData.message) {
+          parts.push('\nSelf Introduction:\n')
+          parts.push(`${formData.message}\n`)
+        }
+        
+        parts.push('\nLooking forward to your reply!')
       }
-      if (formData.phone) {
-        parts.push(`Phone: ${formData.phone}\n`)
-      }
-      if (formData.serviceType) {
-        parts.push(`Service Type: ${formData.serviceType}\n`)
-      }
-      
-      if (formData.message) {
-        parts.push('\nMessage:\n')
-        parts.push(`${formData.message}\n`)
-      }
-      
-      parts.push('\nPlease get back to me soon!')
     }
     
     return parts.join('')
   }
 
-  const openWhatsApp = (message: string) => {
-    const encodedMessage = encodeURIComponent(message)
-    
-    if (WHATSAPP_PHONE) {
-      // 使用 api.whatsapp.com 格式（需要电话号码）
-      const whatsappUrl = `https://api.whatsapp.com/send/?phone=${WHATSAPP_PHONE}&text=${encodedMessage}&type=phone_number&app_absent=0`
-      window.open(whatsappUrl, '_blank')
-    } else {
-      // 使用短链接格式
-      const whatsappUrl = `${WHATSAPP_SHORT_LINK}?text=${encodedMessage}`
-      window.open(whatsappUrl, '_blank')
-    }
-  }
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     
-    // 验证必填字段
-    const newErrors: { name?: string; message?: string } = {}
+    // 根据用途验证必填字段
+    const newErrors: { name?: string; email?: string; message?: string; position?: string } = {}
     if (!formData.name.trim()) {
       newErrors.name = locale === 'zh' ? '请输入您的姓名' : 'Please enter your name'
     }
+    if (purpose === 'recruitment') {
+      if (!formData.email.trim()) {
+        newErrors.email = locale === 'zh' ? '请输入您的邮箱' : 'Please enter your email'
+      }
+      if (!formData.position.trim()) {
+        newErrors.position = locale === 'zh' ? '请选择申请职位' : 'Please select a position'
+      }
+    }
     if (!formData.message.trim()) {
-      newErrors.message = locale === 'zh' ? '请输入您的需求或想法' : 'Please enter your message'
+      const messageKey = purpose === 'consultation' 
+        ? (locale === 'zh' ? '请输入您的需求或想法' : 'Please enter your message')
+        : (locale === 'zh' ? '请输入自我介绍' : 'Please enter your self introduction')
+      newErrors.message = messageKey
     }
     
     if (Object.keys(newErrors).length > 0) {
@@ -122,7 +168,7 @@ export default function Contact() {
       setShowSuccess(true)
       
       // 重置表单
-      setFormData({ name: '', phone: '', serviceType: '', message: '' })
+      setFormData({ name: '', phone: '', email: '', serviceType: '', position: '', message: '' })
       
       // 3秒后自动隐藏成功提示
       setTimeout(() => {
@@ -179,6 +225,45 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="bg-white rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-10 shadow-xl sm:shadow-2xl"
           >
+            {/* 用途选择器 */}
+            <div className="mb-6 sm:mb-8">
+              <label className="block text-sm font-medium text-primary-900 mb-3 text-center">
+                {locale === 'zh' ? '联系目的' : 'Purpose'}
+              </label>
+              <div className="flex gap-3 sm:gap-4 justify-center">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setPurpose('consultation')
+                    setFormData({ name: '', phone: '', email: '', serviceType: '', position: '', message: '' })
+                    setErrors({})
+                  }}
+                  className={`flex-1 px-4 py-3 rounded-lg font-medium transition-all duration-300 ${
+                    purpose === 'consultation'
+                      ? 'bg-sage-600 text-white shadow-md'
+                      : 'bg-gray-100 text-primary-700 hover:bg-gray-200'
+                  }`}
+                >
+                  {locale === 'zh' ? '客户咨询' : 'Consultation'}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setPurpose('recruitment')
+                    setFormData({ name: '', phone: '', email: '', serviceType: '', position: '', message: '' })
+                    setErrors({})
+                  }}
+                  className={`flex-1 px-4 py-3 rounded-lg font-medium transition-all duration-300 ${
+                    purpose === 'recruitment'
+                      ? 'bg-sage-600 text-white shadow-md'
+                      : 'bg-gray-100 text-primary-700 hover:bg-gray-200'
+                  }`}
+                >
+                  {locale === 'zh' ? '加入我们' : 'Join Us'}
+                </button>
+              </div>
+            </div>
+
             <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
               {/* 姓名 */}
               <div>
@@ -206,6 +291,34 @@ export default function Contact() {
                 )}
               </div>
 
+              {/* 邮箱（仅加入我们时显示） */}
+              {purpose === 'recruitment' && (
+                <div>
+                  <label className="block text-sm font-medium text-primary-900 mb-2">
+                    {tRecruitment('emailPlaceholder')} *
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={(e) => {
+                      handleChange(e)
+                      if (errors.email) {
+                        setErrors({ ...errors, email: undefined })
+                      }
+                    }}
+                    placeholder={tRecruitment('emailPlaceholder')}
+                    required
+                    className={`w-full px-4 py-3 rounded-lg bg-gray-50 border text-primary-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sage-500 focus:border-transparent font-sans ${
+                      errors.email ? 'border-red-300 focus:ring-red-400' : 'border-gray-200'
+                    }`}
+                  />
+                  {errors.email && (
+                    <p className="mt-1 text-xs text-red-600">{errors.email}</p>
+                  )}
+                </div>
+              )}
+
               {/* 电话（选填） */}
               <div>
                 <label className="block text-sm font-medium text-primary-900 mb-2">
@@ -221,29 +334,65 @@ export default function Contact() {
                 />
               </div>
 
-              {/* 服务类型 */}
-              <div>
-                <label className="block text-sm font-medium text-primary-900 mb-2">
-                  {t('serviceTypePlaceholder')}
-                </label>
-                <select
-                  name="serviceType"
-                  value={formData.serviceType}
-                  onChange={handleChange}
-                  aria-label={t('serviceTypePlaceholder')}
-                  className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-primary-900 focus:outline-none focus:ring-2 focus:ring-sage-500 focus:border-transparent font-sans"
-                >
-                  <option value="">{t('serviceTypePlaceholder')}</option>
-                  <option value={t('serviceTypeOption1')}>{t('serviceTypeOption1')}</option>
-                  <option value={t('serviceTypeOption2')}>{t('serviceTypeOption2')}</option>
-                  <option value={t('serviceTypeOption3')}>{t('serviceTypeOption3')}</option>
-                </select>
-              </div>
+              {/* 服务类型（仅客户咨询时显示） */}
+              {purpose === 'consultation' && (
+                <div>
+                  <label className="block text-sm font-medium text-primary-900 mb-2">
+                    {t('serviceTypePlaceholder')}
+                  </label>
+                  <select
+                    name="serviceType"
+                    value={formData.serviceType}
+                    onChange={handleChange}
+                    aria-label={t('serviceTypePlaceholder')}
+                    className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-primary-900 focus:outline-none focus:ring-2 focus:ring-sage-500 focus:border-transparent font-sans"
+                  >
+                    <option value="">{t('serviceTypePlaceholder')}</option>
+                    <option value={t('serviceTypeOption1')}>{t('serviceTypeOption1')}</option>
+                    <option value={t('serviceTypeOption2')}>{t('serviceTypeOption2')}</option>
+                    <option value={t('serviceTypeOption3')}>{t('serviceTypeOption3')}</option>
+                  </select>
+                </div>
+              )}
 
-              {/* 需求描述 */}
+              {/* 申请职位（仅加入我们时显示） */}
+              {purpose === 'recruitment' && (
+                <div>
+                  <label className="block text-sm font-medium text-primary-900 mb-2">
+                    {tRecruitment('positionPlaceholder')} *
+                  </label>
+                  <select
+                    name="position"
+                    value={formData.position}
+                    onChange={(e) => {
+                      handleChange(e)
+                      if (errors.position) {
+                        setErrors({ ...errors, position: undefined })
+                      }
+                    }}
+                    required
+                    className={`w-full px-4 py-3 rounded-lg bg-gray-50 border text-primary-900 focus:outline-none focus:ring-2 focus:ring-sage-500 focus:border-transparent font-sans ${
+                      errors.position ? 'border-red-300 focus:ring-red-400' : 'border-gray-200'
+                    }`}
+                  >
+                    <option value="">{tRecruitment('positionPlaceholder')}</option>
+                    <option value={tRecruitment('position1.title')} className="text-primary-900">
+                      {tRecruitment('position1.title')} {tRecruitment('position1.titleHighlight')} {tRecruitment('position1.title2')}
+                    </option>
+                    <option value={tRecruitment('position2.title')} className="text-primary-900">
+                      {tRecruitment('position2.title')} {tRecruitment('position2.titleHighlight')} {tRecruitment('position2.title2')}
+                    </option>
+                  </select>
+                  {errors.position && (
+                    <p className="mt-1 text-xs text-red-600">{errors.position}</p>
+                  )}
+                </div>
+              )}
+
+              {/* 消息框 */}
               <div>
                 <label className="block text-sm font-medium text-primary-900 mb-2">
-                  {t('messagePlaceholder')} *
+                  {purpose === 'consultation' ? t('messagePlaceholder') : tRecruitment('messagePlaceholder')} *
                 </label>
                 <textarea
                   name="message"
@@ -254,7 +403,7 @@ export default function Contact() {
                       setErrors({ ...errors, message: undefined })
                     }
                   }}
-                  placeholder={t('messagePlaceholder')}
+                  placeholder={purpose === 'consultation' ? t('messagePlaceholder') : tRecruitment('messagePlaceholder')}
                   rows={5}
                   required
                   className={`w-full px-4 py-3 rounded-lg bg-gray-50 border text-primary-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sage-500 focus:border-transparent resize-none font-sans ${
@@ -298,7 +447,12 @@ export default function Contact() {
               {/* 提交按钮 */}
               <button
                 type="submit"
-                disabled={isSubmitting || !formData.name || !formData.message}
+                disabled={
+                  isSubmitting || 
+                  !formData.name || 
+                  !formData.message || 
+                  (purpose === 'recruitment' && (!formData.email || !formData.position))
+                }
                 className="w-full bg-gradient-to-r from-sage-600 to-sage-700 text-white px-6 py-3.5 sm:py-4 rounded-lg font-semibold hover:from-sage-700 hover:to-sage-800 active:scale-95 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none text-sm sm:text-base md:text-lg font-sans min-h-[44px] flex items-center justify-center gap-2"
               >
                 {isSubmitting ? (

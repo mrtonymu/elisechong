@@ -179,6 +179,34 @@
     "copyright": "© {year} Her Wealth · Elise Chong 张慧薇",
     "tagline": "用心打造，助您成就财务自由之路。"
   },
+  "recruitment": {
+    "title": "加入",
+    "titleHighlight": "Her Wealth",
+    "title2": "",
+    "subtitle": "寻找志同道合的伙伴，一起为女性财富成长而努力。无论是加入我们的团队，还是成为合作伙伴，我们都期待与你携手前行。",
+    "position1": {
+      "title": "招募",
+      "titleHighlight": "团队成员",
+      "title2": "",
+      "description": "加入 Her Wealth 团队，与我们共同打造专业的财富管理服务。我们寻找有热情、有专业能力的人才，一起为客户的财富成长而努力。"
+    },
+    "position2": {
+      "title": "招募",
+      "titleHighlight": "合作伙伴",
+      "title2": "",
+      "description": "寻找志同道合的合作伙伴，共同拓展财富管理业务。无论是独立理财顾问、还是相关行业的专业人士，都欢迎与我们洽谈合作。"
+    },
+    "formTitle": "提交申请",
+    "namePlaceholder": "您的姓名",
+    "emailPlaceholder": "您的邮箱",
+    "phonePlaceholder": "您的电话（选填）",
+    "positionPlaceholder": "申请职位",
+    "messagePlaceholder": "请简单介绍一下您的背景和为什么想加入 Her Wealth…",
+    "footerNote": "我会在一天内亲自回复，如果您希望更快联系，也可以直接通过 WhatsApp 与我聊聊。",
+    "submit": "提交申请",
+    "submitting": "提交中...",
+    "success": "感谢您的申请！表单已提交，正在打开 WhatsApp..."
+  },
   "images": {
     "heroAlt": "张慧薇 Elise Chong - 财富管理与投资顾问",
     "aboutAlt": "张慧薇 Elise Chong - 个人故事",

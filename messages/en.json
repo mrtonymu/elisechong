@@ -179,6 +179,34 @@
     "copyright": "© {year} Her Wealth · Elise Chong 张慧薇",
     "tagline": "Crafted with care to empower your financial journey."
   },
+  "recruitment": {
+    "title": "Join",
+    "titleHighlight": "Her Wealth",
+    "title2": "",
+    "subtitle": "Looking for like-minded individuals to join us in empowering women's financial growth. Whether you want to join our team or become a partner, we'd love to work with you.",
+    "position1": {
+      "title": "Team",
+      "titleHighlight": "Members",
+      "title2": "",
+      "description": "Join the Her Wealth team and help us deliver professional wealth management services. We're looking for passionate, skilled individuals to help our clients achieve financial growth."
+    },
+    "position2": {
+      "title": "Business",
+      "titleHighlight": "Partners",
+      "title2": "",
+      "description": "Seeking like-minded business partners to expand our wealth management offerings. Whether you're an independent financial advisor or a professional in related fields, we welcome collaboration opportunities."
+    },
+    "formTitle": "Submit Application",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "Your Email",
+    "phonePlaceholder": "Your Phone (optional)",
+    "positionPlaceholder": "Position Applied For",
+    "messagePlaceholder": "Tell us about your background and why you'd like to join Her Wealth…",
+    "footerNote": "I usually reply within a day — feel free to reach out on WhatsApp if you'd prefer a quicker chat.",
+    "submit": "Submit Application",
+    "submitting": "Submitting...",
+    "success": "Thank you for your application! Form submitted, opening WhatsApp..."
+  },
   "images": {
     "heroAlt": "Elise Chong - Wealth Management & Investment Advisor",
     "aboutAlt": "Elise Chong - Personal Story",
